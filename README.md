@@ -1,5 +1,7 @@
 # azael_db-whitelisted
-[FiveM](https://fivem.net/)  - Database Whitelist (API Outage)
+[FiveM](https://fivem.net/)  - Whitelist DB (API Outage)
+
+ทรัพยากรเสริมสำหรับ [azael_dc-whitelisted](https://fivem.azael.dev/digishop/azael-dc-whitelisted) หากบริการ [Azael API](https://api.azael.dev/) หยุดทำงาน (โดยจะอ้างอิงจากตัวระบุบนฐานข้อมูลของเซิร์ฟเวอร์ ตาราง `azael_dc_whitelisted` คอลัมน์ `identifier`)
 
 ## ความต้องการ
 - [oxmysql](https://github.com/overextended/oxmysql)
@@ -17,14 +19,10 @@ git clone https://github.com/Azael-Dev/azael_db-whitelisted [local]/[azael]/[con
 - แก้ไข `azael_db-whitelisted-main` เป็น `azael_db-whitelisted`
 - วางไว้ใน `[local]/[azael]/[connect]`
 
-## ติดตั้ง
-- เพิ่มสิ่งนี้ไปยัง server.cfg
-
-```
-ensure azael_db-whitelisted
-```
-
-- สามารถตรวจสอบการกำหนดค่าเพิ่มเติมได้ที่ [server.config.js](https://github.com/Azael-Dev/azael_db-whitelisted/blob/main/server.config.js)
+## วิธีใช้งาน
+- ใช้งานคำสั่ง `ensure azael_db-whitelisted` หากบริการ [Azael API](https://api.azael.dev/) หยุดทำงาน
+- ทรัพยากร `azael_db-whitelisted` จะทำงานเเทนที่ `azael_dc-whitelisted` โดยทันที
+- **หมายเหตุ:** ผู้เล่นที่ยังไม่เคยเชื่อมต่อกับเซิร์ฟเวอร์จะไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้หากใช้งานทรัพยากรนี้
 
 ## เครดิต
 - [AZAEL](https://discord.gg/Ca5W62f)
